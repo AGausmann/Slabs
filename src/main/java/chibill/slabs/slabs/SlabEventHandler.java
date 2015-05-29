@@ -12,7 +12,7 @@ public class SlabEventHandler  implements Listener {
 		try{
 		if(event.canBuild() && !(event.getBlock().getType().equals(Material.STEP) && event.getBlock().getState().getBlock().getData() == (byte)8)){
 			
-			if(event.getItemInHand().getItemMeta().getDisplayName().equals("Upside Down Half Slab") && event.getItemInHand().getType().equals(Material.STEP)){
+			if(event.getItemInHand().getItemMeta().getDisplayName().equals("Upside Down Slab") && event.getItemInHand().getType().equals(Material.STEP)){
 				event.getBlock().getState().getBlock().setType(Material.STEP);
 				event.getBlock().getState().getBlock().setData((byte)(event.getItemInHand().getData().getData()+ 8));
 			}
@@ -20,7 +20,7 @@ public class SlabEventHandler  implements Listener {
 		}
 		if(event.canBuild() && !(event.getBlock().getType().equals(Material.WOOD_STEP) && event.getBlock().getState().getBlock().getData() == (byte)8)){
 			
-			if(event.getItemInHand().getItemMeta().getDisplayName().equals("Upside Down Half Slab") && event.getItemInHand().getType().equals(Material.WOOD_STEP)){
+			if(event.getItemInHand().getItemMeta().getDisplayName().equals("Upside Down Slab") && event.getItemInHand().getType().equals(Material.WOOD_STEP)){
 				event.getBlock().getState().getBlock().setType(Material.WOOD_STEP);
 				event.getBlock().getState().getBlock().setData((byte)(event.getItemInHand().getData().getData()+ 8));
 			}
@@ -28,7 +28,7 @@ public class SlabEventHandler  implements Listener {
 		}
 		if(event.canBuild() && !(event.getBlock().getType().equals(Material.STONE_SLAB2) && event.getBlock().getState().getBlock().getData() == (byte)8)){
 			
-			if(event.getItemInHand().getItemMeta().getDisplayName().equals("Upside Down Half Slab") && event.getItemInHand().getType().equals(Material.STONE_SLAB2)){
+			if(event.getItemInHand().getItemMeta().getDisplayName().equals("Upside Down Slab") && event.getItemInHand().getType().equals(Material.STONE_SLAB2)){
 				event.getBlock().getState().getBlock().setType(Material.STONE_SLAB2);
 				event.getBlock().getState().getBlock().setData((byte)(event.getItemInHand().getData().getData()+ 8));
 			}

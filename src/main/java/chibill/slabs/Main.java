@@ -23,7 +23,7 @@ public class Main extends JavaPlugin {
 	    public void onEnable() {
 			item = new ItemStack(Material.STEP);
 			meta = item.getItemMeta();
-			meta.setDisplayName("Upside Down Half Slab");
+			meta.setDisplayName("Upside Down Slab");
 			Listener SlabEventHandler = new SlabEventHandler();
 			getServer().getPluginManager().registerEvents(SlabEventHandler , this);
 	    }
